@@ -1,0 +1,67 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent-a-Ride - Car Rental Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Rent-a-Ride</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Cars</a></li>
+            <li><a href="#booking">Book Now</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <header id="home">
+        <div class="hero-content">
+            <h1>Rent Your Dream Car Today</h1>
+            <p>Choose from our wide range of premium vehicles</p>
+            <button class="cta-button">Book Now</button>
+        </div>
+    </header>
+
+    <!-- Cars Section -->
+    <section id="cars" class="cars-section">
+        <h2>Our Fleet</h2>
+        <div class="car-container" id="carContainer">
+            <!-- Cars will be added dynamically with JS -->
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="booking" class="booking-section">
+        <h2>Book Your Car</h2>
+        <form id="bookingForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="date" required>
+            <select id="carSelect" required>
+                <option value="">Select a Car</option>
+            </select>
+            <input type="number" placeholder="Rental Days" min="1" required>
+            <button type="submit">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: info@rentaride.com</p>
+        <p>Phone: (234) 555555555</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rent-a-Ride. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
